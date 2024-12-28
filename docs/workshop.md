@@ -42,7 +42,7 @@ During this workshop, you will receive instructions to complete each step. It is
 
 </div>
 
-## What is the Platform Engineering
+## What is Platform Engineering
 
 While people give different definitions to the DevOps (a job, automating processes, corporate organisation, mixing Dev And Ops), the Platform engineering is the practice of designing and building toolchains and workflows that enable self-service capabilities for software engineering organizations in the cloud-native era. It focuses on creating a standardized platform that developers can use to build, deploy, and manage applications efficiently. The goal is to reduce complexity, improve developer productivity, and ensure consistency across the development lifecycle.
 
