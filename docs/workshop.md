@@ -75,7 +75,7 @@ In summary, platform engineering focuses on building the tools and infrastructur
 
 ## Microsoft vision
 
-![Start Right, Stay Right, Get Right](./assets/plateng2.png)
+![Start Right, Stay Right, Get Right](./assets/intro/plateng2.png)
 
 As you embark on your own platform engineering journey, you'll likely encounter three key motions:
 
@@ -87,11 +87,11 @@ But the best compliance work feels "free“ to the developer - it's automated, i
 
 To answer these three motions, the company needs to set up a platform with a toolbox composed of several products:
 
-![Key aspects of a Engineering Platform](./assets/plateng1.png)
+![Key aspects of a Engineering Platform](./assets/intro/plateng1.png)
 
 As Microsoft, we offer an product for each of these components
 
-![Platform Engineering components](./assets/plateng3.png)
+![Platform Engineering components](./assets/intro/plateng3.png)
 
 ## Scenario
 
@@ -107,7 +107,7 @@ We will be using the following services:
 - [Azure Load Testing][loadtesting]
 - [Application Insights][appinsights]
 
-![Global diagram](./assets/global-diagram.png)
+![Global diagram](./assets/intro/global-diagram.png)
 
 [az-portal]: https://portal.azure.com
 [devbox]: https://learn.microsoft.com/en-us/azure/dev-box/overview-what-is-microsoft-dev-box
@@ -128,7 +128,7 @@ We will be using the following services:
 
 ## Setup your dev environment
 
-Azure DevBox is a development environment provided by Microsoft Azure. It's essentially a cloud-based, pre-configured development environment that developers can use to write, run, and debug their code. Here are some of its advantages:
+[Azure DevBox][devbox] is a development environment provided by Microsoft Azure. It's essentially a cloud-based, pre-configured development environment that developers can use to write, run, and debug their code. Here are some of its advantages:
 
 - **Pre-configured Environment**: Azure DevBox comes with a pre-configured development environment, which includes a variety of popular programming languages, development tools, and frameworks. This saves developers the time and effort of setting up their own environment.
 - **Anywhere Access**: Since Azure DevBox is cloud-based, developers can access their development environment from anywhere, on any device. This makes it a great tool for remote teams and flexible working arrangements.
@@ -184,7 +184,7 @@ git clone https://github.com/ikhemissi/hands-on-lab-platform-engineering-for-dev
 
 <div class="task" data-title="Task">
 
-> - Update the `qna` endpoint in `service/api/src/api.js` by prefixing the return value with a prefix of your choice
+> - Update the `qna` endpoint in `services/api/src/api.js` by prefixing the return value with a prefix of your choice
 
 </div>
 
@@ -192,7 +192,7 @@ git clone https://github.com/ikhemissi/hands-on-lab-platform-engineering-for-dev
 
 <summary>📚 Toggle solution</summary>
 
-1. Open the file `service/api/src/api.js`
+1. Open the file `services/api/src/api.js`
 1. Locate the line `answer: '42',`
 1. Replace '42' with 'PREFIX 42' where `PREFIX` is your initials
 
@@ -234,6 +234,7 @@ Environments can be created directly from the [Developer portal][devportal] or u
 <div class="task" data-title="Task">
 
 > - Create a new environment using the `Function` definition
+> - Check in Azure portal that resources have been deployed
 
 </div>
 
@@ -249,10 +250,9 @@ Environments can be created directly from the [Developer portal][devportal] or u
 1. Hit `Next`
 1. Use the same environment name as in the previous step and leave the location as is.
 1. Hit `Create` and wait for the environment to be created (could take few minutes)
-
+![Create environment - step 1](./assets/lab2/devcenter-ade.png)
+![Create environment - creating...](./assets/lab2/devcenter-ade-creation.png)
 </details>
-
-<!-- TODO: est-ce qu'on mettrait pas des screenshots ? est-ce qu'on leur demanderait pas d'aller dans le portail azure pour vérifier les resources déployées ?  -->
 
 ## Deploy services
 
@@ -414,7 +414,7 @@ Key features of Application Insights include:
 
 The Application Map is a feature within Application Insights that provides a visual overview of the components of your application and their interactions. It shows the flow of requests across these components and helps identify any failures or performance bottlenecks. This makes it easier to understand the architecture of your application and diagnose any issues.
 
-![Application map](./assets/application-map.png)
+![Application map](./assets/lab3/application-map.png)
 
 <div class="task" data-title="Task">
 
