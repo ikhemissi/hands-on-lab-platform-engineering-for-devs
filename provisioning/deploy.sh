@@ -15,6 +15,16 @@ export PAT_TOKEN="github_pat_11ABTRVVY0nOXfkwMj8sy9XXXX" # read-only one one rep
 az login
 az account set -s $SUBSCRIPTION_ID --only-show-errors
 
+
+# register provider
+az provider register -n 'Microsoft.DevCenter' -o none
+az provider register -n 'Microsoft.Storage' -o none
+az provider register -n 'Microsoft.LoadTestService' -o none
+az provider register -n 'Microsoft.OperationalInsights' -o none
+az provider register -n 'microsoft.insights' -o none
+az provider register -n 'Microsoft.Web' -o none
+
+
 #Az config w/ start-job wrapper to block warning messages
 az config set extension.use_dynamic_install=yes_without_prompt
 az extension add --name devcenter --allow-preview true
